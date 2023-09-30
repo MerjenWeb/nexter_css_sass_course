@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+    <title>nexter &mdash; your home, your freedom</title>
+  </head>
+
+  <body class="container">
+    kjhb
+  </body>
+
+</html>
+
+<!--  
+CSS GRID : 
+grid-auto-flow: row dense (dense fills up the empty grid cell)
+grid-auto-rows  
+grid-auto-column
+
+grid-template-columns/rows: max-content 1fr 1fr max-content; (max-content - tries to make the column as wide as possible without having to cause line breaks)
+
+grid-template-columns/rows: min-content 1fr 1fr max-content; (min-content - takes the largest width that is needed to fit this content without overflowing)
+
+minmax() - a function that we pass two values in and then CSS ensures that the track will always stay between these two values
+
+minmax(100px, 200px) - CSS grid will ensure that grid column will always stay between 100 and 200 px width.
+
+grid-template-rows: repeat(2, minmax(150px, min-content)) - we want the row to be at least 150px high, and if the content does not fit we want the height to grow to fit the content, so the height will be as big as the content needs
+
+grid-template-columns: minmax(200px, 300px) repeat(3, 1fr); 
+
+grid-template-columns: minmax(200px, 50%) repeat(3, 1fr); (will be 50% of the width till it is 200px when decreased)
+
+grid-template-columns: minmax(200px, 1fr) repeat(3, 1fr); (will be 1fr till 200px)
+
+Auto-fill and auto-fit
+grid-template-columns: repeat(auto-fill, 100px); 
+auto-fill - creates as many tracks with the desired width that we specify (1000px in this case) as fit into the container (1000/100 = 10);
+
+grid-template-columns: repeat(auto-fit, 100px); 
+auto-fit - still creates 10 columns, but then collapses the ones that are empty to have a width of zero
+
+grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); - filled the collapsed space by expanding columns into more than 100px of width
+-->
