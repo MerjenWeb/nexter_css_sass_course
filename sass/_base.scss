@@ -45,4 +45,16 @@ body {
 	// 1. contain the content, 2. if we increase the content, we want the 2nd row (min-content) to grow with it
 	// the default value is auto (adapts to the content) - which we could also put there
 	grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+	//it is very common in web design to use a design grid with 8 or 12 or 16 predefined columns
+	// minmax(14rem) - maximum should be 14rem, but it can be lower, but not below the min-content (the minimum size that it should have to fit the content in there)
+	grid-template-columns:
+		[sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr)
+		[center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+		[center-end]
+		minmax(6rem, 1fr) [full-end];
+
+	& > * {
+		padding: 40px;
+		font-size: 3rem;
+	}
 }
