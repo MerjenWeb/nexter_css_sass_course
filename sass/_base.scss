@@ -39,3 +39,10 @@ body {
 	font-weight: 300;
 	line-height: 1.6;
 }
+
+.container {
+	display: grid;
+	// 1. contain the content, 2. if we increase the content, we want the 2nd row (min-content) to grow with it
+	// the default value is auto (adapts to the content) - which we could also put there
+	grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+}
